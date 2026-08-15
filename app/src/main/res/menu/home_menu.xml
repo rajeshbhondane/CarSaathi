@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuHomeMyProfile"
+        android:title="My Profile"
+        app:showAsAction="always"
+        android:icon="@drawable/profile"
+        android:iconTint="@color/white"/>
+
+
+    <item
+        android:id="@+id/menuHomeSettings"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:iconTint="@color/white"/>
+
+    <item
+        android:id="@+id/menuHomeContactUs"
+        android:title="Contact Us"
+        app:showAsAction="never"
+        android:iconTint="@color/white"/>
+
+
+    <item
+        android:id="@+id/menuHomeAboutUs"
+        android:title="About Us"
+        app:showAsAction="never"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/menuHomeLogout"
+        android:title="Logout"
+        app:showAsAction="always"
+        android:icon="@drawable/logout"
+        android:iconTint="@color/white"/>
+
+</menu>
