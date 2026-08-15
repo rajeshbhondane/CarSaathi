@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/navy_blue">
+
+
+    <ImageView
+        android:id="@+id/ivCarLogo"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        android:src="@drawable/car_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="CarSathee"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text=" - Your Roadside Help , Anytime.   "
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="bar.json"/>
+
+
+</LinearLayout>
