@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/navy_blue">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CarSathee"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <ImageView
+            android:layout_width="181dp"
+            android:layout_height="178dp"
+            android:layout_gravity="center"
+            android:src="@drawable/car_icon"
+            android:layout_marginTop="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="My Profile"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <EditText
+                    android:id="@+id/etProfileUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/navy_blue"
+                    android:paddingVertical="14dp"
+                    android:hint="User Full Name :-"
+                    android:textColorHint="@color/navy_blue"
+                    android:drawableLeft="@drawable/username"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPersonName"
+                    tools:ignore="HardcodedText"/>
+
+
+                <EditText
+                    android:id="@+id/etProfileEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/navy_blue"
+                    android:paddingVertical="14dp"
+                    android:hint="User Email ID :-"
+                    android:textColorHint="@color/navy_blue"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="HardcodedText"/>
+
+
+                <EditText
+                    android:id="@+id/etProfilePhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/navy_blue"
+                    android:paddingVertical="14dp"
+                    android:hint="User Phone No :-"
+                    android:textColorHint="@color/navy_blue"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="10dp"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText"/>
+
+                <EditText
+                    android:id="@+id/etProfilePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/navy_blue"
+                    android:paddingVertical="14dp"
+                    android:hint="Password :-"
+                    android:textColorHint="@color/navy_blue"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    tools:ignore="HardcodedText"/>
+
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text=" Submit Profile "
+                    android:backgroundTint="@color/navy_blue"
+                    android:textColor="@color/white"
+                    android:drawablePadding="5dp"
+                    tools:ignore="HardcodedText"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Edit Profile"
+            android:textColor="@color/navy_blue"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Logout"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF0000"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/logout"
+            android:drawablePadding="5dp"
+            tools:ignore="HardcodedText"/>
+
+    </LinearLayout>
+</ScrollView>

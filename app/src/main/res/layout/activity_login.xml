@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/navy_blue">
+
+    <ImageView
+        android:id="@+id/ivCarLogo"
+        android:layout_width="261dp"
+        android:layout_height="274dp"
+        android:layout_gravity="center"
+        android:src="@drawable/car_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="   Welcome To CarSathee App "
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=" Login To Continue "
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#998C8C"
+        android:textSize="25dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="16dp"
+        android:layout_margin="16sp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etLoginMobileNo"
+                android:layout_marginTop="10dp"
+                android:hint="🇮🇳 91+ Enter Your Mobile Number"
+                android:textColorHint="@color/navy_blue"
+                android:textColor="@color/navy_blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:inputType="number"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnLoginOTP"
+                android:layout_marginTop="30dp"
+                android:text="Get OTP "
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvRegister"
+                android:text="Don't Have Account? Register Here "
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/navy_blue"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
