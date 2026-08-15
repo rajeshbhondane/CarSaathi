@@ -1,6 +1,7 @@
 package com.app.carsaathi.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.app.carsaathi.CarDetailsActivity;
 import com.app.carsaathi.Pojo.StoreItem;
 import com.app.carsaathi.R;
 import com.bumptech.glide.Glide;
@@ -36,10 +38,18 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
          StoreItem model = item.get(position);
         Glide.with(holder.itemView.getContext()).load(model.getImage()).error(R.drawable.error).placeholder(R.drawable.placeholder).into(holder.ivCarImage);
         holder.tvCarName.setText(model.getCarName());
-        holder.tvPrice.setText(model.getPrice());
+        holder.tvPrice.setText("₹" + model.getPrice());
         holder.tvCarInfo.setText(model.getType());
         holder.tvMileage.setText(model.getKm());
         holder.tvDistance.setText(model.getLocation());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, CarDetailsActivity.class);
+                i.putExtra("id",model.getId());
+                context.startActivity(i);
+            }
+        });
     }
 
     @Override

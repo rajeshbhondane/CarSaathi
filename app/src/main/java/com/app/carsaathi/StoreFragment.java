@@ -56,6 +56,7 @@ public class StoreFragment extends Fragment {
                     JSONArray array = response.getJSONArray("getdata");
                     for (int i= 0 ; i< array.length();i++){
                         JSONObject main = array.getJSONObject(i);
+                        int id = main.getInt("id");
                         String name = main.getString("carname");
                         String image = main.getString("image");
                         int price = main.getInt("price");
@@ -63,7 +64,7 @@ public class StoreFragment extends Fragment {
                         String location = main.getString("distance");
                         String type = main.getString("details");
 
-                        items.add(new StoreItem(image,name,price,type,km,location));
+                        items.add(new StoreItem(id,image,name,price,type,km,location));
                     }
                     adapter.notifyDataSetChanged();
                 } catch (JSONException e) {

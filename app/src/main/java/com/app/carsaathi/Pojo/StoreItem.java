@@ -1,6 +1,7 @@
 package com.app.carsaathi.Pojo;
 
 public class StoreItem {
+    private int id;
     private String Image;
     private String CarName;
     private int Price;
@@ -8,13 +9,18 @@ public class StoreItem {
     private String Km ;
     private String Location;
 
-    public StoreItem(String Image, String CarName, int Price, String Type, String Km, String Location){
+    public StoreItem(int id,String Image, String CarName, int Price, String Type, String Km, String Location){
+        this.id = id;
         this.CarName = CarName;
         this.Image = Image;
         this.Price = Price;
         this.Type = Type;
         this.Km = Km;
         this.Location = Location;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getCarName() {
